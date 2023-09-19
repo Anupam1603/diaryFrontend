@@ -9,7 +9,7 @@ const PostHead = ({ post }) => {
     const { user } = useAuthContext();
 
     const handleClick = async () => {
-        const response = await fetch(`https://diary-api-nbqk.onrender.com/api/posts/${post._id}`, {
+        const response = await fetch(`https://myjournal-api.onrender.com/api/posts/${post._id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`

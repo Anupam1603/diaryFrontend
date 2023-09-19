@@ -16,7 +16,7 @@ const PostForm = () => {
         };
 
         try {
-            const response = await fetch('https://diary-api-nbqk.onrender.com/api/posts', {
+            const response = await fetch('https://myjournal-api.onrender.com/api/posts', {
                 method: 'POST',
                 body: JSON.stringify(post),
                 headers: {
